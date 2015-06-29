@@ -1,0 +1,16 @@
+{
+  "name": "AutoPrefixCSS",
+  "version": "1.0.0",
+  "description": "Break free from CSS prefix hell! stylus plugin for vendor prefixes.",
+  "keywords": [
+    "AutoPrefixCSS",
+    "CSS3"
+  ],
+  "author": "kenny wang <398188662@qq.com> (http://JSLite.io)",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-stylus": "^0.21.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
