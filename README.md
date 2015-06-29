@@ -1,5 +1,5 @@
-# CSS前缀
-
+CSS前缀
+-----
 Break free from CSS prefix hell!  
 摆脱CSS前缀地狱！   
 
@@ -13,7 +13,7 @@ CSS3 每个浏览器都有私有属性例如 `-moz` 代表firefox浏览器私有
 - -o- (Opéra)
 - syntaxe normale
 
-## 初衷
+# 初衷
 
 网上有很多js实现的自动添加 CSS前缀的哦，例如[autoprefixer](https://github.com/postcss/autoprefixer) 、[prefixfree](http://leaverou.github.com/prefixfree/)。  
 
@@ -21,16 +21,36 @@ CSS3 每个浏览器都有私有属性例如 `-moz` 代表firefox浏览器私有
 * 只生成CSS，浏览器直接渲染CSS，不用通过js生成CSS在渲染。
 
 
-## 使用必备条件
+# 使用必备条件
 
 需要安装 `node.js` 和 `stylus` ，还得学会使用 `stylus`， [stylus github](https://github.com/stylus/stylus)， [stylus教程](http://jslite.io/2015/04/27/stylus%E8%8F%9C%E9%B8%9F%E5%85%A5%E9%97%A8%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/)
 
-## Usage
+# Usage
 
-Just place the AutoPrefixCSS.styl file into your project, then import it in your stylus file with @import 'AutoPrefixCSS' Each function tries to accept as many official values (according to the AutoPrefixCSS standard), but does require some changes.
+## reset.styl
+只需要将 `reset.styl` 到您的项目，然后引用 `@import('reset.styl')` ，然后在你所引用的`.styl` 中调用下面任何一个方法：
+
+ - global-reset() # 所有标签重置不包括HTML5新标签重置
+ - nested-reset() # 嵌套标签重置
+ - reset-font()
+ - reset-box-model()
+ - reset-body()
+ - reset-table() # 表格重置
+ - reset-table-cell() # 表格单格重置
+ - reset-html5() # HTML5新标签重置
+
+例子：  
+
+```
+@import('reset.styl')
+global-reset()
+```
 
 
-## opacity
+## vendor.styl
+只需要将 `vendor.styl` 到您的项目，然后引用 `@import('vendor.styl')` ，然后你在你的 `styl` 文件中正常使用 `stylus` 语法就好了。效果如下例子：
+
+### opacity
 adds opacity filter for IE
 
 ```
