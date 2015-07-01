@@ -1,0 +1,19 @@
+{
+  "name": "AutoPrefixCSS",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jaywcjlove/AutoPrefixCSS",
+  "authors": [
+    "jaywcjlove <398188662@qq.com>"
+  ],
+  "keywords": [
+    "prefixcss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
