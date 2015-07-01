@@ -13,6 +13,12 @@ CSS3 每个浏览器都有私有属性例如 `-moz` 代表firefox浏览器私有
 - -o- (Opéra)
 - syntaxe normale
 
+# 下载
+
+```
+$ bower info AutoPrefixCss
+```
+
 # 初衷
 
 网上有很多js实现的自动添加 CSS前缀的哦，例如[autoprefixer](https://github.com/postcss/autoprefixer) 、[prefixfree](http://leaverou.github.com/prefixfree/)。  
