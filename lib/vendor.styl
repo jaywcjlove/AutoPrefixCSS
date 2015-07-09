@@ -15,8 +15,6 @@ vendor-prefixes ?= webkit khtml moz o ms official
 // optionally specifying the only prefixes to utilize,
 // or those which should be ignored.
 vendor(prop, args, only = null, ignore = null,vendor-property = true)
-    log:vendor-property
-    log2:official
     for prefix in vendor-prefixes
         unless (only and !(prefix in only)) or (ignore and prefix in ignore)
             if official == prefix or vendor-property == false
