@@ -1,5 +1,8 @@
-CSS前缀
+Stylus:轻而易举实现 CSS 前缀和CSS reset 
 -----
+
+[![](https://img.shields.io/github/issues/jaywcjlove/AutoPrefixCSS.svg)](https://github.com/jaywcjlove/AutoPrefixCSS/issues) [![](https://img.shields.io/github/forks/jaywcjlove/AutoPrefixCSS.svg)](https://github.com/jaywcjlove/AutoPrefixCSS/network) [![](https://img.shields.io/github/stars/jaywcjlove/AutoPrefixCSS.svg)](https://github.com/jaywcjlove/AutoPrefixCSS/stargazers) [![](https://img.shields.io/github/release/jaywcjlove/AutoPrefixCSS.svg)](https://github.com/jaywcjlove/AutoPrefixCSS/releases)
+
 Break free from CSS prefix hell!  
 摆脱CSS前缀地狱！   
 
@@ -15,8 +18,9 @@ CSS3 每个浏览器都有私有属性例如 `-moz` 代表firefox浏览器私有
 
 # 下载
 
-```
-$ bower info AutoPrefixCss
+```shell
+$ bower install AutoPrefixCss #下载
+$ bower info AutoPrefixCss #查看详情
 ```
 
 # 初衷
@@ -53,13 +57,14 @@ global-reset()
 ```
 
 
-## vendor.styl
+## 自动添加CSS后缀
 只需要将 `vendor.styl` 到您的项目，然后引用 `@import('vendor.styl')` ，然后你在你的 `styl` 文件中正常使用 `stylus` 语法就好了。效果如下例子：
 
 ### opacity
 adds opacity filter for IE
 
-```
+```stylus
+@import('vendor.styl')
 body
     opacity:0.5
 ```
